@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <!-- Clock Face -->
+    <circle cx="100" cy="100" r="80" fill="#3b5d50"/>
+    <circle cx="100" cy="100" r="75" fill="#ffffff"/>
+    <!-- Clock Numbers -->
+    <text x="95" y="40" font-size="20" fill="#3b5d50">12</text>
+    <text x="165" y="105" font-size="20" fill="#3b5d50">3</text>
+    <text x="95" y="175" font-size="20" fill="#3b5d50">6</text>
+    <text x="30" y="105" font-size="20" fill="#3b5d50">9</text>
+    <!-- Clock Hands -->
+    <line x1="100" y1="100" x2="100" y2="50" stroke="#f9bf29" stroke-width="4"/>
+    <line x1="100" y1="100" x2="140" y2="100" stroke="#3b5d50" stroke-width="4"/>
+    <!-- Center Point -->
+    <circle cx="100" cy="100" r="5" fill="#3b5d50"/>
+    <!-- Speed Lines -->
+    <path d="M160,40 L180,20" stroke="#dce5e4" stroke-width="3"/>
+    <path d="M160,160 L180,180" stroke="#dce5e4" stroke-width="3"/>
+    <path d="M40,160 L20,180" stroke="#dce5e4" stroke-width="3"/>
+    <path d="M40,40 L20,20" stroke="#dce5e4" stroke-width="3"/>
+</svg>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <!-- Crown -->
+    <path d="M50,100 L100,60 L150,100 L130,140 L70,140 Z" fill="#f9bf29"/>
+    <circle cx="100" cy="80" r="10" fill="#3b5d50"/>
+    <circle cx="70" cy="100" r="10" fill="#3b5d50"/>
+    <circle cx="130" cy="100" r="10" fill="#3b5d50"/>
+    <!-- Sparkles -->
+    <path d="M40,60 L50,50 L60,60 L50,70 Z" fill="#dce5e4"/>
+    <path d="M140,60 L150,50 L160,60 L150,70 Z" fill="#dce5e4"/>
+    <path d="M90,40 L100,30 L110,40 L100,50 Z" fill="#dce5e4"/>
+    <!-- Base -->
+    <rect x="60" y="140" width="80" height="20" fill="#3b5d50" rx="5"/>
+</svg>

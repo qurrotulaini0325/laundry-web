@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <!-- Iron Base -->
+    <path d="M40,120 L160,120 L180,160 L20,160 Z" fill="#3b5d50"/>
+    <!-- Iron Top -->
+    <path d="M60,80 L140,80 L160,120 L40,120 Z" fill="#dce5e4"/>
+    <!-- Steam Holes -->
+    <circle cx="80" cy="100" r="3" fill="#3b5d50"/>
+    <circle cx="100" cy="100" r="3" fill="#3b5d50"/>
+    <circle cx="120" cy="100" r="3" fill="#3b5d50"/>
+    <!-- Steam -->
+    <path d="M70,70 Q80,60 90,70 Q100,80 110,70 Q120,60 130,70" fill="none" stroke="#dce5e4" stroke-width="3"/>
+    <!-- Clothes -->
+    <path d="M30,140 Q100,120 170,140" fill="none" stroke="#f9bf29" stroke-width="4"/>
+</svg>
