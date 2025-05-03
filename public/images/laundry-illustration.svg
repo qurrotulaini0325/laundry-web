@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500" height="500" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect x="0" y="0" width="500" height="500" fill="#f8f9fa" opacity="0.5"/>
+    
+    <!-- Washing Machine -->
+    <circle cx="250" cy="250" r="120" fill="#ffffff" stroke="#549c99" stroke-width="8"/>
+    <circle cx="250" cy="250" r="100" fill="none" stroke="#549c99" stroke-width="4" stroke-dasharray="20,10"/>
+    <circle cx="250" cy="250" r="80" fill="#dce5e4"/>
+    
+    <!-- Door Window -->
+    <circle cx="250" cy="250" r="60" fill="#ffffff" stroke="#549c99" stroke-width="4"/>
+    
+    <!-- Clothes Inside -->
+    <path d="M220,230 Q250,270 280,230" fill="none" stroke="#f9bf29" stroke-width="4"/>
+    <path d="M230,260 Q250,290 270,260" fill="none" stroke="#549c99" stroke-width="4"/>
+    
+    <!-- Control Panel -->
+    <rect x="200" y="150" width="100" height="30" rx="5" fill="#549c99"/>
+    <circle cx="220" cy="165" r="5" fill="#ffffff"/>
+    <circle cx="240" cy="165" r="5" fill="#ffffff"/>
+    <rect x="260" cy="160" width="30" height="10" rx="2" fill="#ffffff"/>
+    
+    <!-- Bubbles -->
+    <circle cx="150" cy="150" r="10" fill="#dce5e4" opacity="0.6"/>
+    <circle cx="350" cy="150" r="15" fill="#dce5e4" opacity="0.6"/>
+    <circle cx="160" cy="350" r="12" fill="#dce5e4" opacity="0.6"/>
+    <circle cx="340" cy="340" r="8" fill="#dce5e4" opacity="0.6"/>
+    
+    <!-- Decorative Elements -->
+    <path d="M100,200 Q150,150 100,100" fill="none" stroke="#f9bf29" stroke-width="3" opacity="0.5"/>
+    <path d="M400,300 Q350,350 400,400" fill="none" stroke="#f9bf29" stroke-width="3" opacity="0.5"/>
+</svg>

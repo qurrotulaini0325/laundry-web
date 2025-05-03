@@ -23,66 +23,73 @@
     </div>
 </div>
 
-<!-- Overview Laundry Section -->
-<div class="why-choose-section">
+<div class="we-help-section">
     <div class="container">
         <div class="row justify-content-between">
-            <div class="col-lg-6">
-                <h2 class="section-title">Laundry Bersih, Wangi, Higienis, dan Tepat Waktu</h2>
-                <p>Assyifa Laundry Express adalah layanan laundry kiloan dan satuan. Kami adalah tim profesional yang selalu mengutamakan kualitas dan pelayanan dengan prinsip bersih, rapi, wangi, higienis & tepat waktu.</p>
-                <p class="mb-4">Assyifa Laundry Express menerima laundry kiloan untuk perusahaan, misal kantor, rumah sakit, asrama, pesantren, sekolah, perusahaan konveksi atau perusahaan-perusahaan sejenisnya. Silakan hubungi kami untuk penawaran harga khusus dengan kontrak minimal 3 bulan.</p>
-                <!-- <div class="alert alert-info d-flex align-items-center" role="alert">
-                    <i class="fa fa-info-circle me-2"></i>
-                    <div>Maksimalkan waktu berharga Anda, biarkan Tim Profesional kami yang mengurus untuk Anda!</div>
-                </div> -->
-
-                <div class="row my-5">
-                    <div class="col-6 col-md-6">
-                        <div class="feature">
-                            <div class="icon">
-                                <img src="images/truck.svg" alt="Image" class="imf-fluid">
-                            </div>
-                            <h3>Antar Jemput</h3>
-                            <p>Layanan antar jemput gratis untuk area tertentu.</p>
-                        </div>
-                    </div>
-
-                    <div class="col-6 col-md-6">
-                        <div class="feature">
-                            <div class="icon">
-                                <img src="images/material-symbols-light--bolt-outline-rounded.svg" alt="Image" class="imf-fluid">
-                            </div>
-                            <h3>Cepat & Tepat Waktu</h3>
-                            <p>Layanan pengerjaan cepat dengan ketepatan waktu yang terjamin.</p>
-                        </div>
-                    </div>
-
-                    <div class="col-6 col-md-6">
-                        <div class="feature">
-                            <div class="icon">
-                                <img src="images/support.svg" alt="Image" class="imf-fluid">
-                            </div>
-                            <h3>Layanan 24/7</h3>
-                            <p>Dukungan pelanggan 24 jam untuk membantu kebutuhan Anda.</p>
-                        </div>
-                    </div>
-
-                    <div class="col-6 col-md-6">
-                        <div class="feature">
-                            <div class="icon">
-                                <img src="images/return.svg" alt="Image" class="imf-fluid">
-                            </div>
-                            <h3>Hasil Maksimal</h3>
-                            <p>Menggunakan deterjen berkualitas dan peralatan modern untuk hasil terbaik.</p>
-                        </div>
-                    </div>
-
+            <div class="col-lg-7 mb-5 mb-lg-0">
+                <div class="imgs-grid">
+                    <div class="grid grid-1"><img src="images/iron.jpg" alt="Iron"></div>
+                    <div class="grid grid-2"><img src="images/laundry-basket.jpg" alt="Laundry Basker"></div>
+                    <div class="grid grid-3"><img src="images/washer.png" alt="Washer"></div>
                 </div>
             </div>
+            <div class="col-lg-5 ps-lg-5">
+                <h2 class="section-title mb-4">Laundry Bersih, Wangi, Higienis, dan Tepat Waktu</h2>
+                <p>Assyifa Laundry Express adalah layanan laundry kiloan dan satuan. Kami adalah tim profesional yang selalu mengutamakan kualitas dan pelayanan dengan prinsip bersih, rapi, wangi, higienis & tepat waktu.</p>
 
-            <div class="col-lg-5">
-                <div class="img-wrap">
-                    <img src="images/about.png" alt="Image" class="img-fluid rounded">
+                <ul class="list-unstyled custom-list my-4">
+                    <li>Layanan premium dengan hasil bersih, rapi, dan wangi</li>
+                    <li>Menggunakan deterjen dan pewangi berkualitas tinggi</li>
+                    <li>Proses pencucian higienis dengan mesin modern</li>
+                    <li>Pengerjaan tepat waktu dengan jaminan kepuasan</li>
+                </ul>
+                <p><a href="/about" class="btn btn-primary">Jelajahi Lebih Lanjut</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="features-area">
+    <div class="container">
+        <div class="row features-inner">
+            <!-- single features -->
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="single-features">
+                    <div class="f-icon">
+                        <img src="images/truck.svg" alt="">
+                    </div>
+                    <h6>Antar Jemput</h6>
+                    <p>Gratis antar jemput di area tertentu</p>
+                </div>
+            </div>
+            <!-- single features -->
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="single-features">
+                    <div class="f-icon">
+                        <img src="images/material-symbols-light--bolt-outline-rounded.svg" alt="">
+                    </div>
+                    <h6>Cepat & Tepat Waktu</h6>
+                    <p>Pengerjaan cepat dan tepat waktu</p>
+                </div>
+            </div>
+            <!-- single features -->
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="single-features">
+                    <div class="f-icon">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+                    <h6>Layanan 24/7</h6>
+                    <p>Dukungan pelanggan 24 jam nonstop</p>
+                </div>
+            </div>
+            <!-- single features -->
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="single-features">
+                    <div class="f-icon">
+                        <i class="fa-solid fa-spray-can-sparkles"></i>
+                    </div>
+                    <h6>Hasil Maksimal</h6>
+                    <p>Bersih Tuntas, Hasil Terbaik</p>
                 </div>
             </div>
         </div>
@@ -96,31 +103,31 @@
             <div class="col-md-12 col-lg-3 mb-5 mb-lg-0">
                 <h2 class="mb-4 section-title">Layanan Unggulan Kami</h2>
                 <p class="mb-4">Berbagai layanan premium untuk memenuhi kebutuhan laundry Anda dengan hasil yang memuaskan.</p>
-                <p><a href="/layanan" class="btn">Lihat Semua Layanan</a></p>
+                <p><a href="/services" class="btn">Lihat Semua Layanan</a></p>
             </div>
 
             <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
-                <a class="product-item" href="/layanan/cuci-setrika">
+                <div class="product-item">
                     <img src="images/cuci-setrika.svg" class="img-fluid product-thumbnail">
                     <h3 class="product-title">Cuci Setrika</h3>
                     <strong class="product-price">Mulai Rp 8.000/kg</strong>
-                </a>
+                </div>
             </div>
 
             <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
-                <a class="product-item" href="/layanan/express">
+                <div class="product-item">
                     <img src="images/express.svg" class="img-fluid product-thumbnail">
                     <h3 class="product-title">Layanan Express</h3>
                     <strong class="product-price">Mulai Rp 15.000/kg</strong>
-                </a>
+                </div>
             </div>
 
             <div class="col-12 col-md-4 col-lg-3 mb-5 mb-md-0">
-                <a class="product-item" href="/layanan/premium">
+                <div class="product-item">
                     <img src="images/premium.svg" class="img-fluid product-thumbnail">
                     <h3 class="product-title">Premium Wash</h3>
                     <strong class="product-price">Mulai Rp 20.000/kg</strong>
-                </a>
+                </div>
             </div>
         </div>
     </div>
@@ -131,7 +138,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-7 mx-auto text-center">
-                <h2 class="section-title">Testimonials</h2>
+                <h2 class="section-title">Apa Kata Mereka?</h2>
             </div>
         </div>
 
@@ -146,21 +153,37 @@
 
                     <div class="testimonial-slider">
 
+                    
+                    <div class="item">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8 mx-auto">
+
+                                    <div class="testimonial-block text-center">
+                                        <blockquote class="mb-5">
+                                            <p>“Awalnya coba karena males nyuci sendiri, eh ternyata enak banget! Dijemput, dicuci bersih, wangi, terus dianterin lagi ke rumah. Sekarang malah langganan tiap minggu.”</p>
+                                        </blockquote>
+
+                                        <div class="author-info">
+                                            <h3 class="font-weight-bold">Rina Saputri</h3>
+                                            <span class="position d-block mb-3">Mahasiswa – Malang</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
                         <div class="item">
                             <div class="row justify-content-center">
                                 <div class="col-lg-8 mx-auto">
 
                                     <div class="testimonial-block text-center">
                                         <blockquote class="mb-5">
-                                            <p>&ldquo;Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer convallis volutpat dui quis scelerisque.&rdquo;</p>
+                                            <p>“Pelayanannya ramah dan cepet. Waktu itu cucian numpuk banget, tapi semua beres dalam sehari. Plus bisa request antar jemput, jadi nggak perlu repot keluar rumah.”</p>
                                         </blockquote>
 
                                         <div class="author-info">
-                                            <div class="author-pic">
-                                                <img src="images/person-1.png" alt="Maria Jones" class="img-fluid">
-                                            </div>
-                                            <h3 class="font-weight-bold">Maria Jones</h3>
-                                            <span class="position d-block mb-3">CEO, Co-Founder, XYZ Inc.</span>
+                                            <h3 class="font-weight-bold">Dewi Lestari</h3>
+                                            <span class="position d-block mb-3">Ibu Rumah Tangga – Malang</span>
                                         </div>
                                     </div>
 
@@ -174,15 +197,12 @@
 
                                     <div class="testimonial-block text-center">
                                         <blockquote class="mb-5">
-                                            <p>&ldquo;Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer convallis volutpat dui quis scelerisque.&rdquo;</p>
+                                            <p>“Gue sempet ragu awalnya, tapi pas lihat hasilnya langsung puas. Baju jadi rapi banget, nggak ada bau apek, dan cepet banget prosesnya. Pokoknya recommended!”</p>
                                         </blockquote>
 
                                         <div class="author-info">
-                                            <div class="author-pic">
-                                                <img src="images/person-1.png" alt="Maria Jones" class="img-fluid">
-                                            </div>
-                                            <h3 class="font-weight-bold">Maria Jones</h3>
-                                            <span class="position d-block mb-3">CEO, Co-Founder, XYZ Inc.</span>
+                                            <h3 class="font-weight-bold">Andi Pratama</h3>
+                                            <span class="position d-block mb-3">Karyawan – Malang</span>
                                         </div>
                                     </div>
 
@@ -190,27 +210,6 @@
                             </div>
                         </div>
 
-                        <div class="item">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8 mx-auto">
-
-                                    <div class="testimonial-block text-center">
-                                        <blockquote class="mb-5">
-                                            <p>&ldquo;Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer convallis volutpat dui quis scelerisque.&rdquo;</p>
-                                        </blockquote>
-
-                                        <div class="author-info">
-                                            <div class="author-pic">
-                                                <img src="images/person-1.png" alt="Maria Jones" class="img-fluid">
-                                            </div>
-                                            <h3 class="font-weight-bold">Maria Jones</h3>
-                                            <span class="position d-block mb-3">CEO, Co-Founder, XYZ Inc.</span>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
 
                     </div>
 
@@ -221,7 +220,7 @@
 </div>
 
 <!-- CTA Section -->
-<div class="blog-section before-footer-section">
+<div class="cta-section before-footer-section">
     <div class="container">
         <div class="row mb-5">
             <div class="col-md-12 text-center">
