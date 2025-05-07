@@ -58,7 +58,9 @@
             <div class="col-lg-12 mb-5">
                 <h2 class="section-title">Frequently Asked Questions</h2>
             </div>
-
+            @foreach ($faq as $faqs)
+            <p class="judul">{{ $faqs->Pertanyaan }}. {{ $faqs->Jawaban }}</p>
+            @endforeach
             <div class="col-lg-12">
                 <div class="accordion" id="accordionFAQ">
                     <div class="accordion-item">

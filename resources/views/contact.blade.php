@@ -41,6 +41,10 @@
             </div>
             <div class="col-lg-5 offset-lg-1">
                 <h3>Informasi Kontak</h3>
+                @foreach ($contact as $contacts)
+                <p class="judul">{{ $contacts->tipe_sosmed }}</p>
+                <p class="judul">{{ $contacts->id_username }}</p>
+                @endforeach
                 <div class="contact-info mt-4">
                     <div class="d-flex mb-3">
                         <i class="fas fa-map-marker-alt me-3 mt-1"></i>

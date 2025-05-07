@@ -15,6 +15,19 @@
 </div>
 
 
+<!-- memanggil layanan_satuan -->
+<p>Layanan satuan</p>
+@foreach ($layanan_satuan as $layanan_satuans)
+<p class="judul">{{ $layanan_satuans->id }}. {{ $layanan_satuans->Tipe }}</p>
+@endforeach
+
+<br>
+
+<!-- memanggil daily_kiloan -->
+<p>Daily kiloan</p>
+@foreach ($daily_kiloan as $daily_kiloans)
+<p class="judul">{{ $daily_kiloans->id }}. {{ $daily_kiloans->Layanan }}</p>
+@endforeach
 
 <div class="services-section py-5">
     <div class="container">
