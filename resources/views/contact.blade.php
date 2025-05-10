@@ -41,30 +41,30 @@
             </div>
             <div class="col-lg-5 offset-lg-1">
                 <h3>Informasi Kontak</h3>
-                @foreach ($contact as $contacts)
-                <p class="judul">{{ $contacts->tipe_sosmed }}</p>
-                <p class="judul">{{ $contacts->id_username }}</p>
-                @endforeach
+
                 <div class="contact-info mt-4">
                     <div class="d-flex mb-3">
                         <i class="fas fa-map-marker-alt me-3 mt-1"></i>
                         <div>
                             <h5>Alamat</h5>
-                            <p>Jl. Terusan Venus No.63A, Tlogomas, Lowokwaru, Malang, Jawa Timur</p>
+                            <p>{{ $alamat }}</p>
+                            <a href="{{ $link_maps }}">{{ $link_maps }}</a>
                         </div>
                     </div>
                     <div class="d-flex mb-3">
                         <i class="fas fa-phone-alt me-3 mt-1"></i>
                         <div>
                             <h5>Nomor Telepon</h5>
-                            <p>+62 812 3456 789</p>
+                            @foreach ($nomor_telepon as $nomor_telepons)
+                            <p>{{ $nomor_telepons }}</p>
+                            @endforeach
                         </div>
                     </div>
                     <div class="d-flex mb-3">
                         <i class="fas fa-envelope me-3 mt-1"></i>
                         <div>
                             <h5>Email</h5>
-                            <p>info@assyifalaundry.com</p>
+                            <p>{{ $gmail }}</p>
                         </div>
                     </div>
                     <div class="d-flex mb-3">

@@ -18,7 +18,6 @@
                         <div class="col-4">
                             <ul class="list-unstyled">
                                 <li><a href="#">About us</a></li>
-                                <li><a href="#">Services</a></li>
                                 <li><a href="#">Reservation</a></li>
                                 <li><a href="#">Contact us</a></li>
                             </ul>
@@ -27,9 +26,9 @@
                         <div class="col-4 col-sm-6 col-md-3">
                             <ul class="list-unstyled">
                                 <li><a href="#">Contact</a></li>
-                                <li><a href="#">+62 8123456789</a></li>
-                                <li><a href="#">+62 8123456789</a></li>
-                                <li><a href="#">+62 8123456789</a></li>
+                                @foreach ($nomor_telepon as $nomor_telepons)
+                                <li><a href="#">{{ $nomor_telepons }}</a></li>
+                                @endforeach
                             </ul>
                         </div>
                     </div>
