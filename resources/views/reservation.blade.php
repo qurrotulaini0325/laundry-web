@@ -26,10 +26,6 @@
                             <input type="text" class="form-control" id="name" required>
                         </div>
                         <div class="mb-3">
-                            <label for="email" class="form-label">Alamat Email</label>
-                            <input type="email" class="form-control" id="email" required>
-                        </div>
-                        <div class="mb-3">
                             <label for="phone" class="form-label">Nomor Telepon</label>
                             <input type="tel" class="form-control" id="phone" required>
                         </div>

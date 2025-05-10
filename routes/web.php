@@ -3,9 +3,12 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AboutController;
+use App\Http\Controllers\ServicesController;
+use App\Http\Controllers\ReservationController;
+use App\Http\Controllers\ContactController;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/about', [AboutController::class, 'index'])->name('about');
-Route::view('/services', 'services')->name('services');
-Route::view('/reservation', 'reservation')->name('reservation');
-Route::view('/contact', 'contact')->name('contact');
+Route::get('/services', [ServicesController::class, 'index'])->name('services');
+Route::get('/reservation', [ReservationController::class, 'index'])->name('reservation');
+Route::get('/contact', [ContactController::class, 'index'])->name('contact');

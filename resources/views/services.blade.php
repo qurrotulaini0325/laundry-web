@@ -14,8 +14,6 @@
     </div>
 </div>
 
-
-
 <div class="services-section py-5">
     <div class="container">
         <div class="row mt-5">
@@ -132,10 +130,7 @@
                 </div>
             </div>
         </div>
-
-
     </div>
 </div>
-
 
 @endsection
