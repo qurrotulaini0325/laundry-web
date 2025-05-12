@@ -1,41 +1,99 @@
 <div>
-    <footer class="footer-section">
-        <div class="container relative">
+    <footer class="footer-section" style="background-color: rgb(255, 255, 255); padding: 3rem 0;">
+        <div class="container">
             <div class="row g-5 mb-5">
+                <!-- Brand & Deskripsi -->
                 <div class="col-lg-4">
-                    <div class="mb-4 footer-logo-wrap"><a href="#" class="footer-logo">Assyifa Laundry<span>.</span></a></div>
-                    <p class="mb-4">Assyifa Laundry adalah layanan laundry kiloan dan satuan. Kami adalah tim profesional yang selalu mengutamakan kualitas cucian & pelayanan dengan prinsip bersih, rapi, wangi, higienis & tepat waktu. </p>
+                    <div class="mb-4 footer-logo-wrap">
+                        <a href="/" class="footer-logo d-inline-block">
+                            <img src="images/logo-foot.png" alt="Assyifa Laundry" style="height: 70px;">
+                        </a>
+                    </div>
+                    <p class="mb-4 text-muted" style="font-size: 14px;">
+                        Assyifa Laundry adalah layanan laundry kiloan dan satuan. Kami adalah tim profesional yang selalu mengutamakan kualitas cucian & pelayanan dengan prinsip bersih, rapi, wangi, higienis & tepat waktu.
+                    </p>
 
-                    <ul class="list-unstyled custom-social">
-                        <li><a href="#"><span class="fa fa-brands fa-facebook-f"></span></a></li>
-                        <li><a href="#"><span class="fa fa-brands fa-whatsapp"></span></a></li>
-                        <li><a href="#"><span class="fa fa-brands fa-instagram"></span></a></li>
+                    <!-- Sosial Media -->
+                    <ul class="list-unstyled d-flex gap-3">
+                        <li>
+                            <a href="#" style="
+                                display: inline-block;
+                                width: 40px;
+                                height: 40px;
+                                line-height: 40px;
+                                text-align: center;
+                                border: 2px solid #5da9a4;
+                                border-radius: 50%;
+                                color: #5da9a4;
+                                font-size: 20px;
+                                transition: 0.3s;">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" style="
+                                display: inline-block;
+                                width: 40px;
+                                height: 40px;
+                                line-height: 40px;
+                                text-align: center;
+                                border: 2px solid #5da9a4;
+                                border-radius: 50%;
+                                color: #5da9a4;
+                                font-size: 20px;
+                                transition: 0.3s;">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" style="
+                                display: inline-block;
+                                width: 40px;
+                                height: 40px;
+                                line-height: 40px;
+                                text-align: center;
+                                border: 2px solid #5da9a4;
+                                border-radius: 50%;
+                                color: #5da9a4;
+                                font-size: 20px;
+                                transition: 0.3s;">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
                     </ul>
                 </div>
 
+                <!-- Menu & Kontak -->
                 <div class="col-lg-8">
                     <div class="row links-wrap">
-                        <div class="col-4">
+                        <!-- Menu -->
+                        <div class="col-6 col-md-4 mb-4">
+                            <h5 class="mb-3" style="font-weight: 600; color: #5da9a4;">Menu</h5>
                             <ul class="list-unstyled">
-                                <li><a href="#">About us</a></li>
-                                <li><a href="#">Services</a></li>
-                                <li><a href="#">Reservation</a></li>
-                                <li><a href="#">Contact us</a></li>
+                                <li><a href="/" class="text-muted">Beranda</a></li>
+                                <li><a href="/tentang" class="text-muted">Tentang Kami</a></li>
+                                <li><a href="/layanan" class="text-muted">Layanan</a></li>
+                                <li><a href="/reservasi" class="text-muted">Reservasi</a></li>
+                                <li><a href="/kontak" class="text-muted">Hubungi Kami</a></li>
                             </ul>
                         </div>
 
-                        <div class="col-4 col-sm-6 col-md-3">
-                            <ul class="list-unstyled">
-                                <li><a href="#">Contact</a></li>
-                                <li><a href="#">+62 8123456789</a></li>
-                                <li><a href="#">+62 8123456789</a></li>
-                                <li><a href="#">+62 8123456789</a></li>
+                        <!-- Kontak -->
+                        <div class="col-6 col-md-5">
+                            <h5 class="mb-3" style="font-weight: 600; color: #5da9a4;">Kontak</h5>
+                            <ul class="list-unstyled text-muted">
+                                <li><i class="fab fa-whatsapp me-2"></i>+62 821-4169-2127 (Allya)</li>
+                                <li><i class="fab fa-whatsapp me-2"></i>+62 812-5249-4067 (Mama Allya)</li>
+                                <li><i class="fas fa-phone me-2"></i>+62 821-4169-2127</li>
                             </ul>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </footer>
+        <!-- Copyright -->
+        <div style="background-color: #5da9a4; color: white; padding: 1rem; text-align: center; font-size: 14px;">
+        Copyright © Asyifa Laundry 2025 | Developed by Informatika UM
+        </div>
 </div>

@@ -7,16 +7,22 @@
 <div class="hero">
     <div class="container">
         <div class="row justify-content-between">
-            <div class="col-lg-5">
+            <!-- Teks -->
+            <div class="col-lg-5" data-aos="fade-right" data-aos-duration="1000">
                 <div class="intro-excerpt">
-                    <h1>No. 1 <span class="d-block">Laundry Express <span></span>Bersih, Rapi, Wangi</span></h1>
+                    <h1>No. 1 <span class="d-block">Laundry Express, Bersih, Rapi, Wangi</span></h1>
                     <p class="mb-4">Layanan laundry profesional dengan kualitas premium untuk memenuhi kebutuhan kebersihan pakaian Anda.</p>
-                    <p><a href="/reservation" class="btn btn-secondary me-2">Reservasi Sekarang</a><a href="/layanan" class="btn btn-white-outline">Layanan Kami</a></p>
+                    <p>
+                        <a href="/reservation" class="btn btn-secondary me-2" data-aos="zoom-in" data-aos-delay="500">Reservasi Sekarang</a>
+                        <a href="/layanan" class="btn btn-white-outline" data-aos="zoom-in" data-aos-delay="700">Layanan Kami</a>
+                    </p>
                 </div>
             </div>
-            <div class="col-lg-7">
+
+            <!-- Gambar -->
+            <div class="col-lg-7" data-aos="fade-left" data-aos-duration="1000">
                 <div class="hero-img-wrap">
-                    <img src="images/laundry-hero.svg" class="img-fluid">
+                    <img src="images/laundry-hero.svg" class="img-fluid" alt="Laundry Hero">
                 </div>
             </div>
         </div>

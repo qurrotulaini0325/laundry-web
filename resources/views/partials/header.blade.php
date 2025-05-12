@@ -1,7 +1,9 @@
 <nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark header_area" arial-label="Laundry navigation bar">
 
     <div class="container">
-        <a class="navbar-brand" href="{{ route('home') }}">Assyifa Laundry<span>.</span></a>
+    <a class="navbar-brand" href="{{ route('home') }}">
+    <img src="{{ asset('images/logo.png') }}" alt="Asyifa Laundry" height="40">
+</a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsLaundry" aria-controls="navbarsLaundry" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
