@@ -4,7 +4,7 @@
 
 @section('content')
 <!-- Hero Section -->
-<div class="hero">
+<div class="hero" data-aos="fade-up">
     <div class="container">
         <div class="row justify-content-between">
             <!-- Teks -->
@@ -34,22 +34,22 @@
         <div class="row justify-content-between">
             <div class="col-lg-7 mb-5 mb-lg-0">
                 <div class="imgs-grid">
-                    <div class="grid grid-1"><img src="images/iron.jpg" alt="Iron"></div>
-                    <div class="grid grid-2"><img src="images/laundry-basket.jpg" alt="Laundry Basker"></div>
-                    <div class="grid grid-3"><img src="images/washer.png" alt="Washer"></div>
+                    <div class="grid grid-1" data-aos="fade-up"><img src="images/iron.jpg" alt="Iron"></div>
+                    <div class="grid grid-2" data-aos="fade-up"><img src="images/laundry-basket.jpg" alt="Laundry Basker"></div>
+                    <div class="grid grid-3" data-aos="fade-up"><img src="images/washer.png" alt="Washer"></div>
                 </div>
             </div>
-            <div class="col-lg-5 ps-lg-5">
+            <div class="col-lg-5 ps-lg-5" data-aos="fade-left">
                 <h2 class="section-title mb-4">Laundry Bersih, Wangi, Higienis, dan Tepat Waktu</h2>
                 <p>Assyifa Laundry Express adalah layanan laundry kiloan dan satuan. Kami adalah tim profesional yang selalu mengutamakan kualitas dan pelayanan dengan prinsip bersih, rapi, wangi, higienis & tepat waktu.</p>
 
-                <ul class="list-unstyled custom-list my-4">
+                <ul class="list-unstyled custom-list my-4" data-aos="fade-left">
                     <li>Layanan premium dengan hasil bersih, rapi, dan wangi</li>
                     <li>Menggunakan deterjen dan pewangi berkualitas tinggi</li>
                     <li>Proses pencucian higienis dengan mesin modern</li>
                     <li>Pengerjaan tepat waktu dengan jaminan kepuasan</li>
                 </ul>
-                <p><a href="/about" class="btn btn-primary">Jelajahi Lebih Lanjut</a></p>
+                <p><a href="/about" class="btn btn-primary" data-aos="fade-left">Jelajahi Lebih Lanjut</a></p>
             </div>
         </div>
     </div>
@@ -65,7 +65,7 @@
                         <img src="images/truck.svg" alt="">
                     </div>
                     <h6>Antar Jemput</h6>
-                    <p>Gratis antar jemput di area tertentu</p>
+                    <p>Gratis antar jemput sesuai area/p>
                 </div>
             </div>
             <!-- single features -->
