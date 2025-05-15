@@ -65,7 +65,7 @@
                         <img src="images/truck.svg" alt="">
                     </div>
                     <h6>Antar Jemput</h6>
-                    <p>Gratis antar jemput sesuai area/p>
+                    <p>Gratis antar jemput sesuai area</p>
                 </div>
             </div>
             <!-- single features -->
