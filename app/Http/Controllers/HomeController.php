@@ -15,9 +15,3 @@ class HomeController extends Controller
         return view('home', ['tipe_layanan' => $ambil_tipe_layanan, 'nomor_telepon' => $nomor_telepon]);
     }   
 }
-
-// Route::get('/', [HomeController::class, 'index'])->name('home');
-// Route::get('/about', [AboutController::class, 'index'])->name('about');
-// Route::view('/services', 'services')->name('services');
-// Route::view('/reservation', 'reservation')->name('reservation');
-// Route::view('/contact', 'contact')->name('contact');
