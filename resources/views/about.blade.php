@@ -58,60 +58,23 @@
             <div class="col-lg-12 mb-5">
                 <h2 class="section-title">Frequently Asked Questions</h2>
             </div>
-
             <div class="col-lg-12">
                 <div class="accordion" id="accordionFAQ">
+                    @foreach ($faq as $faqs)
+                    
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
-                                Berapa lama waktu pengerjaan laundry?
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ $faqs->id }}">
+                            {{ $faqs->Pertanyaan }}
                             </button>
                         </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionFAQ">
+                        <div id="collapse{{ $faqs->id }}" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
                             <div class="accordion-body">
-                                Waktu pengerjaan standar adalah 2-3 hari. Untuk layanan express, kami menyediakan layanan selesai dalam 24 jam.
+                            {{ $faqs->Jawaban }}
                             </div>
                         </div>
                     </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
-                                Apakah ada jaminan jika pakaian rusak atau hilang?
-                            </button>
-                        </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
-                            <div class="accordion-body">
-                                Ya, kami memberikan jaminan penggantian untuk pakaian yang rusak atau hilang sesuai dengan ketentuan yang berlaku.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
-                                Bagaimana cara melakukan reservasi?
-                            </button>
-                        </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
-                            <div class="accordion-body">
-                                Anda dapat melakukan reservasi melalui website kami atau menghubungi nomor customer service kami di +62 8123456789.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
-                                Apakah ada layanan antar-jemput?
-                            </button>
-                        </h2>
-                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
-                            <div class="accordion-body">
-                                Ya, kami menyediakan layanan antar-jemput gratis untuk area tertentu dan minimal berat laundry tertentu.
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>

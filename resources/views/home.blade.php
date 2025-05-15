@@ -48,7 +48,10 @@
         </div>
     </div>
 </div>
-
+@foreach ($tipe_layanan as $tipe_layanans)
+<p class="judul">{{ $tipe_layanans->nama_layanan }}</p>
+<p class="judul">{{ $tipe_layanans->waktu }}</p>
+@endforeach
 <div class="features-area">
     <div class="container">
         <div class="row features-inner">

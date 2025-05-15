@@ -33,27 +33,15 @@
                             </tr>
                         </thead>
                         <tbody>
+                            @foreach ($daily_kiloan as $daily_kiloans)
                             <tr>
-                                <th scope="row">Cuci Kering</th>
-                                <td>Rp 5.000</td>
-                                <td>Rp 7.500</td>
-                                <td>Rp 10.000</td>
-                                <td>Rp 12.500</td>
+                                <th scope="row">{{ $daily_kiloans->Layanan }}</th>
+                                <td>Rp {{ $daily_kiloans->Regular }}</td>
+                                <td>Rp {{ $daily_kiloans->One_Day }}</td>
+                                <td>Rp {{ $daily_kiloans->Express }}</td>
+                                <td>Rp {{ $daily_kiloans->Quick }}</td>
                             </tr>
-                            <tr>
-                                <th scope="row">Cuci Kering & Gosok</th>
-                                <td>Rp 6.000</td>
-                                <td>Rp 9.000</td>
-                                <td>Rp 12.000</td>
-                                <td>Rp 15.000</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Setrika</th>
-                                <td>Rp 5.000</td>
-                                <td>Rp 7.500</td>
-                                <td>Rp 10.000</td>
-                                <td>Rp 12.500</td>
-                            </tr>
+                            @endforeach
                         </tbody>
                     </table>
                 </div>
@@ -73,55 +61,15 @@
                             </tr>
                         </thead>
                         <tbody>
+                            @foreach ($layanan_satuan as $layanan_satuans)
                             <tr>
-                                <th scope="row">Bed Cover</th>
-                                <td>Rp 25.000</td>
-                                <td>Rp 37.500</td>
-                                <td>Rp 50.000</td>
-                                <td>Rp 62.500</td>
+                                <th scope="row">{{ $layanan_satuans->Tipe }}</th>
+                                <td>Rp {{ $layanan_satuans->Regular }}</td>
+                                <td>Rp {{ $layanan_satuans->One_Day }}</td>
+                                <td>Rp {{ $layanan_satuans->Express }}</td>
+                                <td>Rp {{ $layanan_satuans->Quick }}</td>
                             </tr>
-                            <tr>
-                                <th scope="row">Sprei</th>
-                                <td>Rp 8.000</td>
-                                <td>Rp 12.000</td>
-                                <td>Rp 16.000</td>
-                                <td>Rp 20.000</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Mukenah</th>
-                                <td>Rp 8.000</td>
-                                <td>Rp 12.000</td>
-                                <td>Rp 16.000</td>
-                                <td>Rp 20.000</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Sajadah</th>
-                                <td>Rp 6.000</td>
-                                <td>Rp 9.000</td>
-                                <td>Rp 12.000</td>
-                                <td>Rp 15.000</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Handuk</th>
-                                <td>Rp 5.000</td>
-                                <td>Rp 7.500</td>
-                                <td>Rp 10.000</td>
-                                <td>Rp 12.500</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Selimut</th>
-                                <td>Rp 10.000</td>
-                                <td>Rp 15.000</td>
-                                <td>Rp 20.000</td>
-                                <td>Rp 25.000</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Jaket</th>
-                                <td>Rp 7.000</td>
-                                <td>Rp 10.500</td>
-                                <td>Rp 14.000</td>
-                                <td>Rp 17.500</td>
-                            </tr>
+                            @endforeach
                         </tbody>
                     </table>
                 </div>
