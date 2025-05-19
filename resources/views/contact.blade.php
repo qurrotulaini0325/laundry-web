@@ -19,22 +19,48 @@
         <div class="row">
             <div class="col-lg-6 mb-4">
                 <h3>Butuh Bantuan? Tulis Pesan di Sini</h3>
-                <form class="contact-form">
+                <form class="contact-form" method="POST" action="{{ route('contact') }}">
+                    @csrf
+                    @if(session('success'))
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        {{ session('success') }}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                    @endif
+
+                    @if(session('wa_url'))
+                    <script>
+                        window.open("{{ session('wa_url') }}", "_blank");
+                    </script>
+                    @endif
+                    
                     <div class="mb-3">
                         <label for="name" class="form-label">Nama Lengkap</label>
-                        <input type="text" class="form-control" id="name" required>
+                        <input type="text" class="form-control @error('nama_lengkap') is-invalid @enderror" id="name" name="nama_lengkap" value="{{ old('nama_lengkap') }}" required>
+                        @error('nama_lengkap')
+                        <div class="invalid-feedback">{{ $message }}</div>
+                        @enderror
                     </div>
                     <div class="mb-3">
                         <label for="email" class="form-label">Alamat Email</label>
-                        <input type="email" class="form-control" id="email" required>
+                        <input type="email" class="form-control @error('email') is-invalid @enderror" id="email" name="email" value="{{ old('email') }}" required>
+                        @error('email')
+                        <div class="invalid-feedback">{{ $message }}</div>
+                        @enderror
                     </div>
                     <div class="mb-3">
                         <label for="subject" class="form-label">Subjek</label>
-                        <input type="text" class="form-control" id="subject" required>
+                        <input type="text" class="form-control @error('subjek') is-invalid @enderror" id="subject" name="subjek" value="{{ old('subjek') }}" required>
+                        @error('subjek')
+                        <div class="invalid-feedback">{{ $message }}</div>
+                        @enderror
                     </div>
                     <div class="mb-3">
                         <label for="message" class="form-label">Isi Pesan</label>
-                        <textarea class="form-control" id="message" rows="5" required></textarea>
+                        <textarea class="form-control @error('pesan') is-invalid @enderror" id="message" name="pesan" rows="5" required>{{ old('pesan') }}</textarea>
+                        @error('pesan')
+                        <div class="invalid-feedback">{{ $message }}</div>
+                        @enderror
                     </div>
                     <button type="submit" class="btn btn-primary">Kirim</button>
                 </form>
