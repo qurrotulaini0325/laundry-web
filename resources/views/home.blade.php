@@ -6,6 +6,17 @@
 <!-- Hero Section -->
 <div class="hero" data-aos="fade-up">
     <div class="container">
+        <!-- Authentication -->
+        <!-- Authentication -->
+        <form method="POST" action="{{ route('logout') }}">
+            @csrf
+
+            <x-dropdown-link :href="route('logout')"
+                    onclick="event.preventDefault();
+                                this.closest('form').submit();">
+                {{ __('Log Out') }}
+            </x-dropdown-link>
+        </form>
         <div class="row justify-content-between">
             <!-- Teks -->
             <div class="col-lg-5" data-aos="fade-right" data-aos-duration="1000">
@@ -68,7 +79,7 @@
                         <img src="images/truck.svg" alt="">
                     </div>
                     <h6>Antar Jemput</h6>
-                    <p>Gratis antar jemput sesuai area/p>
+                    <p>Gratis antar jemput sesuai area</p>
                 </div>
             </div>
             <!-- single features -->
