@@ -16,12 +16,11 @@ return new class extends Migration
             $table->string('nama_lengkap');
             $table->string('no_hp');
             $table->date('tanggal_pengambilan');
-            $table->time('jam_pengambilan')->nullable();
+            $table->time('jam_pengambilan');
             $table->string('service_type');
             $table->integer('service_id');
             $table->string('tipe_layanan');
             $table->integer('quantity');
-            $table->decimal('total_price', 10, 2);
             $table->text('notes')->nullable();
             $table->timestamps();
         });

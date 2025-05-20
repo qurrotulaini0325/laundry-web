@@ -20,84 +20,53 @@
             <div class="col-lg-6">
                 <div class="reservation-form-wrapper">
                     <h2 class="section-title mb-4">Book Your Service</h2>
-                    
-                    @if(session('success'))
-                        <div class="alert alert-success">
-                            {{ session('success') }}
-                        </div>
-                    @endif
-                    
-                    <form class="reservation-form p-4 bg-white rounded shadow-sm" method="POST" action="{{ route('reservation.store') }}">
-                        @csrf
+                    <form class="reservation-form p-4 bg-white rounded shadow-sm" method="POST" action="{{ route('contact') }}">
+                        
+                        
                         <div class="mb-3">
                             <label for="name" class="form-label">Nama Lengkap</label>
-                            <input type="text" class="form-control @error('name') is-invalid @enderror" id="name" name="name" required value="{{ old('name') }}">
-                            @error('name')
-                                <div class="invalid-feedback">{{ $message }}</div>
-                            @enderror
+                            <input type="text" class="form-control" id="name" required>
                         </div>
-                        
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Alamat Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
                         <div class="mb-3">
                             <label for="phone" class="form-label">Nomor Telepon</label>
-                            <input type="tel" class="form-control @error('phone') is-invalid @enderror" id="phone" name="phone" required value="{{ old('phone') }}">
-                            @error('phone')
-                                <div class="invalid-feedback">{{ $message }}</div>
-                            @enderror
+                            <input type="tel" class="form-control" id="phone" required>
                         </div>
-                        
                         <div class="mb-3">
-                            <label for="service_type" class="form-label">Tipe Layanan</label>
-                            <select class="form-control @error('service_type') is-invalid @enderror" id="service_type" name="service_type" required>
-                                <option value="">Pilih tipe layanan</option>
-                                <option value="daily" {{ old('service_type') == 'daily' ? 'selected' : '' }}>Kiloan</option>
-                                <option value="satuan" {{ old('service_type') == 'satuan' ? 'selected' : '' }}>Satuan</option>
+                            <label for="packet-type" class="form-label">Tipe Paket</label>
+                            <select class="form-control" id="packet-type" required>
+                                <option value="">Pilih tipe paket</option>
+                                <option value="kiloan">Kiloan</option>
+                                <option value="satuan">Satuan</option>
                             </select>
-                            @error('service_type')
-                                <div class="invalid-feedback">{{ $message }}</div>
-                            @enderror
                         </div>
-                        
                         <div class="mb-3">
-                            <label for="service_item" class="form-label">Jenis Layanan</label>
-                            <select class="form-control @error('service_item') is-invalid @enderror" id="service_item" name="service_item" required disabled>
+                            <label for="service-type" class="form-label">Jenis Layanan</label>
+                            <select class="form-control" id="service-type" required>
                                 <option value="">Pilih jenis layanan</option>
                             </select>
-                            @error('service_item')
-                                <div class="invalid-feedback">{{ $message }}</div>
-                            @enderror
                         </div>
-                        
                         <div class="mb-3">
-                            <label for="service_speed" class="form-label">Kecepatan Layanan</label>
-                            <select class="form-control @error('service_speed') is-invalid @enderror" id="service_speed" name="service_speed" required disabled>
-                                <option value="">Pilih kecepatan layanan</option>
-                                @foreach($tipe_layanan as $tipe)
-                                    <option value="{{ $tipe->id }}" {{ old('service_speed') == $tipe->id ? 'selected' : '' }}>
-                                        {{ $tipe->nama_layanan }} ({{ $tipe->waktu }} jam)
-                                    </option>
-                                @endforeach
+                            <label for="service-speed" class="form-label">Durasi Pengerjaan</label>
+                            <select class="form-control" id="service-speed" required>
+                                <option value="">Pilih durasi</option>
                             </select>
-                            @error('service_speed')
-                                <div class="invalid-feedback">{{ $message }}</div>
-                            @enderror
                         </div>
-                        
                         <div class="mb-3">
-                            <label for="pickup_date" class="form-label">Waktu Pengambilan</label>
-                            <input type="date" class="form-control @error('pickup_date') is-invalid @enderror" id="pickup_date" name="pickup_date" required value="{{ old('pickup_date') }}">
-                            @error('pickup_date')
-                                <div class="invalid-feedback">{{ $message }}</div>
-                            @enderror
+                            <label for="pickup-date" class="form-label">Tanggal Pengambilan</label>
+                            <input type="date" class="form-control" id="pickup-date" required>
                         </div>
-                        
+                        <div class="mb-3">
+                            <label for="pickup-time" class="form-label">Waktu Pengambilan</label>
+                            <input type="time" class="form-control" id="pickup-time" required>
+                        </div>
                         <div class="mb-3">
                             <label for="notes" class="form-label">Catatan</label>
-                            <textarea class="form-control @error('notes') is-invalid @enderror" id="notes" name="notes" rows="3" placeholder="Tambahkan catatan khusus untuk layanan Anda">{{ old('notes') }}</textarea>
-                            @error('notes')
-                                <div class="invalid-feedback">{{ $message }}</div>
-                            @enderror
+                            <textarea class="form-control" id="notes" rows="3" placeholder="Tambahkan catatan khusus untuk layanan Anda"></textarea>
                         </div>
-                        
                         <button type="submit" class="btn btn-primary w-100">Pesan Sekarang</button>
                     </form>
                 </div>
@@ -124,12 +93,4 @@
         </div>
     </div>
 </div>
-
-<!-- Hidden data for JavaScript -->
-<div id="layanan-data" data-daily='@json($daily_kiloan)' data-satuan='@json($layanan_satuan)' style="display: none;"></div>
-
 @endsection
-
-@push('scripts')
-<script src="{{ asset('js/reservation.js') }}"></script>
-@endpush

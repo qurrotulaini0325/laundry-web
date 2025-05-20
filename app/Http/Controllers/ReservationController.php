@@ -15,13 +15,10 @@ class ReservationController extends Controller
         $ambil_layanan_satuan = ambil_layanan_satuan::all();
         $ambil_daily_kiloan = ambil_daily_kiloan::all();
         $tipe_layanan = ambil_tipe_layanan::all();
-        $nomor_telepon = ambil_contact::where('tipe_sosmed', 'NomorTelepon')
-              ->pluck('id_username');
         return view('reservation', [
             'layanan_satuan' => $ambil_layanan_satuan, 
             "daily_kiloan" => $ambil_daily_kiloan, 
             'tipe_layanan' => $tipe_layanan,
-            'nomor_telepon' => $nomor_telepon
         ]);
     }
     
