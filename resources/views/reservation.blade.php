@@ -20,9 +20,22 @@
             <div class="col-lg-6">
                 <div class="reservation-form-wrapper">
                     <h2 class="section-title mb-4">Book Your Service</h2>
-                    <form class="reservation-form p-4 bg-white rounded shadow-sm" method="POST" action="{{ route('contact') }}">
-                        
-                        
+                    
+                    @if(session('success'))
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        {{ session('success') }}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                    @endif
+
+                    @if(session('wa_url'))
+                    <script>
+                        window.open("{{ session('wa_url') }}", "_blank");
+                    </script>
+                    @endif
+                    
+                    <form class="reservation-form p-4 bg-white rounded shadow-sm" method="POST" action="{{ route('reservation.store') }}">
+                        @csrf
                         <div class="mb-3">
                             <label for="name" class="form-label">Nama Lengkap</label>
                             <input type="text" class="form-control" id="name" required>
@@ -36,23 +49,26 @@
                             <input type="tel" class="form-control" id="phone" required>
                         </div>
                         <div class="mb-3">
-                            <label for="packet-type" class="form-label">Tipe Paket</label>
-                            <select class="form-control" id="packet-type" required>
+                            <label for="service_type" class="form-label">Tipe Paket</label>
+                            <select class="form-control @error('service_type') is-invalid @enderror" id="service_type" name="service_type" required>
                                 <option value="">Pilih tipe paket</option>
-                                <option value="kiloan">Kiloan</option>
-                                <option value="satuan">Satuan</option>
+                                <option value="daily" {{ old('service_type') == 'daily' ? 'selected' : '' }}>Kiloan</option>
+                                <option value="satuan" {{ old('service_type') == 'satuan' ? 'selected' : '' }}>Satuan</option>
                             </select>
                         </div>
                         <div class="mb-3">
-                            <label for="service-type" class="form-label">Jenis Layanan</label>
-                            <select class="form-control" id="service-type" required>
+                            <label for="service_item" class="form-label">Jenis Layanan</label>
+                            <select class="form-control @error('service_item') is-invalid @enderror" id="service_item" name="service_item" required data-old-value="{{ old('service_item') }}">
                                 <option value="">Pilih jenis layanan</option>
                             </select>
                         </div>
                         <div class="mb-3">
-                            <label for="service-speed" class="form-label">Durasi Pengerjaan</label>
-                            <select class="form-control" id="service-speed" required>
-                                <option value="">Pilih durasi</option>
+                            <label for="service_speed" class="form-label">Kecepatan Layanan</label>
+                            <select class="form-control @error('service_speed') is-invalid @enderror" id="service_speed" name="service_speed" required>
+                                <option value="">Pilih kecepatan layanan</option>
+                                @foreach($tipe_layanan as $tipe)
+                                    <option value="{{ $tipe->nama_layanan }}" {{ old('service_speed') == $tipe->nama_layanan ? 'selected' : '' }}>{{ $tipe->nama_layanan }} ({{ $tipe->waktu }} jam)</option>
+                                @endforeach
                             </select>
                         </div>
                         <div class="mb-3">
@@ -93,4 +109,14 @@
         </div>
     </div>
 </div>
-@endsection
+
+@push('scripts')
+<script src="{{ asset('js/reservation.js') }}"></script>
+@endpush
+
+<!-- Hidden data for JavaScript -->
+<div id="layanan-data" 
+    data-daily='@json($daily_kiloan)' 
+    data-satuan='@json($layanan_satuan)' 
+    style="display: none;">
+</div>

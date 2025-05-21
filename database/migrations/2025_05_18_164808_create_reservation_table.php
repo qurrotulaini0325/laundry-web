@@ -9,22 +9,21 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-    public function up(): void
-    {
-        Schema::create('reservation', function (Blueprint $table) {
-            $table->id();
-            $table->string('nama_lengkap');
-            $table->string('no_hp');
-            $table->date('tanggal_pengambilan');
-            $table->time('jam_pengambilan');
-            $table->string('service_type');
-            $table->integer('service_id');
-            $table->string('tipe_layanan');
-            $table->integer('quantity');
-            $table->text('notes')->nullable();
-            $table->timestamps();
-        });
-    }
+    public function up()
+{
+    Schema::create('reservations', function (Blueprint $table) {
+        $table->id();
+        $table->string('name');
+        $table->string('phone');
+        $table->string('service_type');
+        $table->string('service_item');
+        $table->string('service_speed');
+        $table->date('pickup_date');
+        $table->text('notes')->nullable();
+        $table->decimal('price', 10, 2);
+        $table->timestamps();
+    });
+}
 
     /**
      * Reverse the migrations.
