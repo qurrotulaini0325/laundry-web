@@ -1,7 +1,7 @@
 <div>
     <footer class="footer-section" style="background-color: rgb(255, 255, 255); padding: 3rem 0;">
         <div class="container">
-            <div class="row g-5 mb-5">
+            <div class="row g-5 mb-2">
                 <!-- Brand & Deskripsi -->
                 <div class="col-lg-4" data-aos="fade-right">
                     <div class="mb-4 footer-logo-wrap">
