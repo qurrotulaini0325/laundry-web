@@ -15,4 +15,11 @@ Route::get('/reservation', [ReservationController::class, 'index'])->name('reser
 Route::post('/reservation', [ReservationController::class, 'store'])->name('reservation.store');
 Route::get('/contact', [ContactController::class, 'index'])->name('contact');
 Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
-Route::get('/admin', [AdminController::class, 'index'])->name('admin');
+
+Route::get('/admin', [AdminController::class, 'index'])->name('admin.index');
+Route::get('/admin/services', [AdminController::class, 'services'])->name('admin.services');
+Route::get('/admin/services/create', [AdminController::class, 'createService'])->name('admin.services.create');
+Route::post('/admin/services', [AdminController::class, 'storeService'])->name('admin.services.store');
+Route::get('/admin/services/{id}/edit', [AdminController::class, 'editService'])->name('admin.services.edit');
+Route::put('/admin/services/{id}', [AdminController::class, 'updateService'])->name('admin.services.update');
+Route::delete('/admin/services/{id}', [AdminController::class, 'deleteService'])->name('admin.services.delete');

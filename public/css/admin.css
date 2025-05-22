@@ -1,0 +1,30 @@
+.sidebar {
+    min-height: 100vh;
+    background-color: #343a40;
+    color: #fff;
+}
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+.sidebar a:hover {
+    background-color: #495057;
+}
+.sidebar .active {
+    background-color: #495057;
+}
+.content {
+    padding: 20px;
+}
+.sidebar-heading {
+    padding: 20px 15px;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #495057;
+}
+.logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 15px;
+}

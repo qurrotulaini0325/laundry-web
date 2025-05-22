@@ -9,5 +9,13 @@ class ambil_daily_kiloan extends Model
 {
     use HasFactory;
     protected $table = 'daily_kiloan'; //untuk memberi tahu bahwa kita menggunakan table bernama x, bukan Product (nama models).
+    protected $fillable = [
+        'Layanan',
+        'Regular',
+        'One_Day',
+        'Express',
+        'Quick',
+    ];
+    
     public $timestamps = false;
 }
