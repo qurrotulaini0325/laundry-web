@@ -12,54 +12,41 @@
                         Assyifa Laundry adalah layanan laundry kiloan dan satuan. Kami adalah tim profesional yang selalu mengutamakan kualitas cucian & pelayanan dengan prinsip bersih, rapi, wangi, higienis & tepat waktu.
                     </p>
 
-                    <ul class="list-unstyled d-flex gap-3" data-aos="zoom-in">
-                        <li>
-                            <a href="#" style="
-                                display: inline-block;
-                                width: 40px;
-                                height: 40px;
-                                line-height: 40px;
-                                text-align: center;
-                                border: 2px solid #5da9a4;
-                                border-radius: 50%;
-                                color: #5da9a4;
-                                font-size: 20px;
-                                transition: 0.3s;">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://wa.me/6281252494067" style="
-                                display: inline-block;
-                                width: 40px;
-                                height: 40px;
-                                line-height: 40px;
-                                text-align: center;
-                                border: 2px solid #5da9a4;
-                                border-radius: 50%;
-                                color: #5da9a4;
-                                font-size: 20px;
-                                transition: 0.3s;">
-                                <i class="fab fa-whatsapp"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" style="
-                                display: inline-block;
-                                width: 40px;
-                                height: 40px;
-                                line-height: 40px;
-                                text-align: center;
-                                border: 2px solid #5da9a4;
-                                border-radius: 50%;
-                                color: #5da9a4;
-                                font-size: 20px;
-                                transition: 0.3s;">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+          <ul class="list-unstyled d-flex gap-3" data-aos="zoom-in">
+            <li>
+              <a href="https://wa.me/6281252494067" style="
+                  display: inline-block;
+                  width: 40px;
+                  height: 40px;
+                  line-height: 40px;
+                  text-align: center;
+                  border: 2px solid #5da9a4;
+                  border-radius: 50%;
+                  color: #5da9a4;
+                  font-size: 20px;
+                  transition: 0.3s;">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </li>
+            <li>
+              <a href="tel:+6282141692127" style="
+                  display: inline-block;
+                  align-items: center;
+                  width: 40px;
+                  height: 40px;
+                  line-height: 40px;
+                  text-align: center;
+                  border: 2px solid #5da9a4;
+                  border-radius: 50%;
+                  color: #5da9a4;
+                  font-size: 15px;
+                  transition: 0.3s;
+                  text-decoration: none;">
+                <i class="fas fa-phone"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
 
                 <div class="col-lg-8" data-aos="fade-left">
                     <div class="row links-wrap">
