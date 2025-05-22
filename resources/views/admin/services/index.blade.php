@@ -51,7 +51,7 @@
                                         <a href="{{ route('admin.services.edit', ['id' => $item->id, 'type' => 'daily']) }}" class="btn btn-warning btn-sm">
                                             <i class="fas fa-edit"></i>
                                         </a>
-                                        <form action="{{ route('admin.services', ['id' => $item->id]) }}" method="POST" onsubmit="return confirm('Apakah Anda yakin ingin menghapus layanan ini?')">
+                                        <form action="{{ route('admin.services.delete', ['id' => $item->id]) }}" method="POST" onsubmit="return confirm('Apakah Anda yakin ingin menghapus layanan ini?')">
                                             @csrf
                                             @method('DELETE')
                                             <input type="hidden" name="type" value="daily">
