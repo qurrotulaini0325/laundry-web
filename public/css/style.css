@@ -218,8 +218,8 @@ a {
   .hero .btn {
     display: block;
     width: 100%;
-    margin: 10px 0;
-  }
+    margin: 10px 0;             
+}
 
   .hero .hero-img-wrap {
     margin-top: 30px;
@@ -251,8 +251,7 @@ a {
   padding: 12px 30px;
   border-radius: 30px;
   color: #ffffff;
-  background: #2f2f2f;
-  border-color: #2f2f2f; }
+  background: #549c99;}
   .btn:hover {
     color: #ffffff;
     background: #222222;
@@ -367,34 +366,7 @@ a {
       right: 0;
       bottom: 0;
       background: linear-gradient(0deg, rgba(59, 93, 80, 0.05) 0%, rgba(59, 93, 80, 0) 100%);
-      pointer-events: none;
-    }
-    .features-area {
-      background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)),
-              url('/images/why-us.jpg') center/cover no-repeat;
-      padding: 60px 20px;
-    }
-    
-    .features-inner {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
-    }
-           
-    @media (max-width: 991px) {
-      .features-inner {
-        flex-direction: column;
-        align-items: center;
-      }
-    }
-
-  @media (max-width: 991px) {
-  .features-inner {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px; 
-  }
+      pointer-events: none;}
 
   .single-features {
     max-width: 90vw; 
@@ -416,7 +388,6 @@ a {
     font-size: 14px;
     line-height: 1.4;
   }
-}
 
 @media (max-width: 480px) {
   .section {
@@ -431,9 +402,6 @@ a {
     
 .before-footer-section {
   padding: 4rem 0 4rem 0 !important; }
-
-.cta-section {
-  padding: 7rem 0 12rem 0; }
 
 .footer-section {
   padding: 50px 0;
