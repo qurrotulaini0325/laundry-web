@@ -38,7 +38,7 @@
                     <p class="mb-4">Layanan laundry profesional dengan kualitas premium untuk memenuhi kebutuhan kebersihan pakaian Anda.</p>
                     <p>
                         <a href="/reservation" class="btn btn-secondary me-2" data-aos="zoom-in" data-aos-delay="500">Reservasi Sekarang</a>
-                        <a href="/layanan" class="btn btn-white-outline" data-aos="zoom-in" data-aos-delay="700">Layanan Kami</a>
+                        <a href="/services" class="btn btn-white-outline" data-aos="zoom-in" data-aos-delay="700">Layanan Kami</a>
                     </p>
                 </div>
             </div>
@@ -57,9 +57,9 @@
         <div class="row justify-content-between">
             <div class="col-lg-7 mb-5 mb-lg-0">
                 <div class="imgs-grid">
-                    <div class="grid grid-1" data-aos="fade-up"><img src="images/iron.jpg" loading="lazy" alt="Iron"></div>
-                    <div class="grid grid-2" data-aos="fade-up"><img src="images/laundry-basket.jpg" loading="lazy" alt="Laundry Basket"></div>
-                    <div class="grid grid-3" data-aos="fade-up"><img src="images/washer.png" loading="lazy" alt="Washer"></div>
+                    <div class="grid grid-1" data-aos="fade-up"><img src="images/iron.webp" alt="Iron"></div>
+                    <div class="grid grid-2" data-aos="fade-up"><img src="images/laundry-basket.webp" alt="Laundry Basket"></div>
+                    <div class="grid grid-3" data-aos="fade-up"><img src="images/washer.webp" alt="Washer"></div>
                 </div>
             </div>
             <div class="col-12 col-lg-5 ps-lg-5" data-aos="fade-left">

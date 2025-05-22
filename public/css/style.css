@@ -127,7 +127,7 @@ a {
   padding: 5rem 0 4rem 0; }
   .hero.page-inner.overlay {
     position: relative; 
-    background-image: url('../images/laundry-basket.jpg');
+    background-image: url('../images/laundry-basket.webp');
     background-size: cover;
     background-position: center; }
       @media (min-width: 768px) {
@@ -346,7 +346,7 @@ a {
     }
     .features-area {
       background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)),
-              url('/images/why-us.jpg') center/cover no-repeat;
+              url('/images/why-us.webp') center/cover no-repeat;
       padding: 60px 20px;
     }
     

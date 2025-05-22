@@ -26,7 +26,7 @@
         <div class="row justify-content-between align-items-center">
             <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
                 <div class="img-wrap-2">
-                    <img src="images/about.jpg" alt="Image" class="img-fluid rounded">
+                    <img src="images/about.webp" alt="Image" class="img-fluid rounded">
                 </div>
             </div>
             <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300" data-aos-duration="1000">
