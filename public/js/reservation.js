@@ -3,6 +3,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const serviceItemSelect = document.getElementById('service_item');
     const serviceSpeedSelect = document.getElementById('service_speed');
     const layananData = document.getElementById('layanan-data');
+    const form = document.querySelector('.reservation-form');
+    const phoneInput = document.getElementById('phone');
+    const dateInput = document.getElementById('pickup_date');
+
     
     // Parse the JSON data from the hidden div
     const dailyServices = JSON.parse(layananData.dataset.daily);
@@ -41,4 +45,32 @@ document.addEventListener('DOMContentLoaded', function() {
     if (serviceTypeSelect.value) {
         updateServiceItems(serviceTypeSelect.value);
     }
+
+    form.addEventListener('submit', function (event) {
+        let valid = true;
+
+        // Validasi nomor telepon: hanya angka
+        const phoneValue = phoneInput.value.trim();
+        if (!/^\d+$/.test(phoneValue)) {
+            alert('Nomor telepon hanya boleh berisi angka.');
+            phoneInput.focus();
+            valid = false;
+        }
+
+        // Validasi tanggal: minimal hari ini
+        const selectedDate = new Date(dateInput.value);
+        const today = new Date();
+        today.setHours(0, 0, 0, 0); // Hilangkan jam agar validasi hanya berdasarkan tanggal
+
+        if (selectedDate < today) {
+            alert('Tanggal pengambilan tidak boleh sebelum hari ini.');
+            dateInput.focus();
+            valid = false;
+        }
+
+        if (!valid) {
+            event.preventDefault(); // Hentikan submit form
+        }
+    });
+
 });

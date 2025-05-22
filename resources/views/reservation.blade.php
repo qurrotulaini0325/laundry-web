@@ -122,11 +122,6 @@
     </div>
 </div>
 
-<!-- @push('scripts')
-<script src="{{ asset('js/reservation.js') }}"></script>
-@endpush -->
-
-<!-- Hidden data for JavaScript -->
 <div id="layanan-data" 
     data-daily='@json($daily_kiloan)' 
     data-satuan='@json($layanan_satuan)' 

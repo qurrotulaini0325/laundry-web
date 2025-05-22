@@ -28,6 +28,18 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-md-4">
+                        <div class="card bg-primary text-white mb-4">
+                            <div class="card-body">
+                                <h5 class="card-title">Reservasi</h5>
+                                <p class="card-text">Lihat Reservasi Laundry</p>
+                            </div>
+                            <div class="card-footer d-flex align-items-center justify-content-between">
+                                <a class="small text-white stretched-link" href="{{ route('admin.reservations') }}">Lihat Detail</a>
+                                <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
