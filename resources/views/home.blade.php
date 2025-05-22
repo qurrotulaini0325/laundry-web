@@ -10,21 +10,24 @@
 @section('additional_js')
     <script src="{{ asset('js/tiny-slider.js') }}"></script>
     <script>
-        const slider = tns({
-            container: '.testimonial-slider',
-            items: 1,
-            slideBy: 'page',
-            autoplay: true,
-            controlsContainer: '#testimonial-nav',
-            nav: false,
-            autoplayButtonOutput: false,
-            responsive: {
-                768: {
-                    items: 1
-                }
+    const slider = tns({
+        container: '.testimonial-slider',
+        items: 1,
+        slideBy: 'page',
+        autoplay: true,
+        autoplayTimeout: 5000,
+        speed: 400,
+        controlsContainer: '#testimonial-nav',
+        nav: false,
+        autoplayButtonOutput: false,
+        responsive: {
+            768: {
+                items: 1
             }
-        });
-    </script>
+        }
+    });
+</script>
+
 @endsection
 
 @section('content')
