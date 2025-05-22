@@ -11,22 +11,18 @@ use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\AdminController;
 use App\Http\Middleware\IsAdmin;
 
-// Redirect root to /home
 Route::get('/', function () {
     return redirect('/home');
 });
 
-// Home page (accessible to everyone)
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 
-// Authenticated users only
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/dashboard', [HomeController::class, 'index'])->name('dashboard');
 
 
 });
 
-// Public pages
 Route::get('/about', [AboutController::class, 'index'])->name('about');
 Route::get('/services', [ServicesController::class, 'index'])->name('services');
 Route::get('/reservation', [ReservationController::class, 'index'])->name('reservation');
@@ -34,7 +30,6 @@ Route::post('/reservation', [ReservationController::class, 'store'])->name('rese
 Route::get('/contact', [ContactController::class, 'index'])->name('contact');
 Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
 
-// Register & login routes (accessible only for guests)
 Route::middleware('guest')->group(function () {
     Route::get('/login', [AuthenticatedSessionController::class, 'create'])->name('login');
     Route::post('/login', [AuthenticatedSessionController::class, 'store']);

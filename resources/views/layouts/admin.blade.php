@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,26 +13,32 @@
             background-color: #343a40;
             color: #fff;
         }
+
         .sidebar a {
             color: #fff;
             text-decoration: none;
             padding: 10px 15px;
             display: block;
         }
+
         .sidebar a:hover {
             background-color: #495057;
         }
+
         .sidebar .active {
             background-color: #495057;
         }
+
         .content {
             padding: 20px;
         }
+
         .sidebar-heading {
             padding: 20px 15px;
             font-size: 1.2rem;
             border-bottom: 1px solid #495057;
         }
+
         .logo {
             font-weight: bold;
             font-size: 1.5rem;
@@ -39,6 +46,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="container-fluid">
         <div class="row">
@@ -66,10 +74,14 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{ route('home') }}" class="nav-link">
-                            <i class="fas fa-arrow-left me-2"></i> Back to Website
-                        </a>
+                        <form method="POST" action="{{ route('logout') }}">
+                            @csrf
+                            <button type="submit" class="nav-link btn btn-link text-start text-white w-100" style="text-decoration: none;">
+                                <i class="fas fa-sign-out-alt me-2"></i> Logout
+                            </button>
+                        </form>
                     </li>
+
                 </ul>
             </div>
 
@@ -82,17 +94,17 @@
                 </div>
 
                 @if(session('success'))
-                    <div class="alert alert-success alert-dismissible fade show" role="alert">
-                        {{ session('success') }}
-                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                    </div>
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    {{ session('success') }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
                 @endif
 
                 @if(session('error'))
-                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                        {{ session('error') }}
-                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                    </div>
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    {{ session('error') }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
                 @endif
 
                 <!-- Main Content -->
@@ -100,9 +112,10 @@
             </div>
         </div>
     </div>
-        
+
     <!-- Bootstrap JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     @yield('scripts')
 </body>
+
 </html>
