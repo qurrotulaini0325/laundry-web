@@ -2,6 +2,10 @@
 
 @section('title', 'About Us')
 
+@section('additional_css')
+    <link rel="stylesheet" href="{{ asset('css/about.css') }}">
+@endsection
+
 @section('content')
 <!-- Hero Section -->
 <div class="hero page-inner overlay">

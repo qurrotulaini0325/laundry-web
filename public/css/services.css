@@ -1,0 +1,65 @@
+.services-section {
+    padding: 7rem 0; }
+    .services-section .table {
+      background: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: all 0.3s ease;
+      margin-bottom: 30px; }
+      .services-section .table:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); }
+      .services-section .table-header {
+        background: #549c99;
+        color: #ffffff;
+        font-weight: 600;
+        padding: 1.5rem; }
+      .services-section .table th,
+      .services-section .table td {
+        padding: 1rem 1.5rem;
+        border: none;
+        transition: all 0.3s ease; }
+      .services-section .table tbody tr:hover td {
+        background: rgba(59, 93, 80, 0.05); }
+      .services-section .table tbody tr td {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05); }
+      .services-section .table tbody tr:last-child td {
+        border-bottom: none; }
+  
+        @media (max-width: 768px) {
+    .btn {
+      width: 100%;
+      font-size: 14px;
+      padding: 10px 20px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+  
+    .accordion-item .accordion-button {
+      padding: 1rem;
+      font-size: 1rem;
+    }
+  
+    .accordion-item .accordion-body {
+      padding: 1rem;
+      font-size: 0.95rem;
+    }
+  
+    .services-section {
+      padding: 3rem 1rem;
+    }
+  
+    .services-section .table {
+      width: 100%;
+      display: block;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+  
+    .services-section .table-header,
+    .services-section .table th,
+    .services-section .table td {
+      white-space: nowrap;
+    }
+  }

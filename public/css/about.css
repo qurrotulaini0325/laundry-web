@@ -1,0 +1,64 @@
+.feature {
+    margin-bottom: 30px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease; }
+    .feature:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); }
+    .feature .icon {
+      display: inline-block;
+      position: relative;
+      margin-bottom: 20px; }
+      .feature .icon:before {
+        content: "";
+        width: 33px;
+        height: 33px;
+        position: absolute;
+        background: rgba(59, 93, 80, 0.2);
+        border-radius: 50%;
+        right: -8px;
+        bottom: 0; }
+    .feature h3 {
+      font-size: 20px;
+      color: #549c99;
+      margin-bottom: 15px; }
+    .feature p, .feature ul {
+      color: #6a6a6a;
+      font-size: 16px;
+      line-height: 1.7; }
+    .feature ul li {
+      margin-bottom: 10px; }
+  
+
+.accordion-item {
+    border: none;
+    margin-bottom: 1rem;
+    border-radius: 15px !important;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease; }
+    .accordion-item:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); }
+    .accordion-item .accordion-button {
+      padding: 1.5rem;
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: #549c99;
+      background-color: #ffffff; }
+      .accordion-item .accordion-button:not(.collapsed) {
+        color: #ffffff;
+        background-color: #549c99; }
+      .accordion-item .accordion-button:focus {
+        box-shadow: none; }
+    .accordion-item .accordion-body {
+      padding: 1.5rem;
+      background-color: #ffffff;
+      font-size: 1rem;
+      line-height: 1.7;
+      color: #6a6a6a; }
+
+      

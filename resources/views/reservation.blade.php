@@ -2,6 +2,10 @@
 
 @section('title', 'Make a Reservation')
 
+@section('additional_js')
+    <script src="{{ asset('js/reservation.js') }}"></script>
+@endsection
+
 @section('content')
 <div class="hero page-inner overlay">
     <div class="container">
@@ -38,16 +42,21 @@
                         @csrf
                         <div class="mb-3">
                             <label for="name" class="form-label">Nama Lengkap</label>
-                            <input type="text" class="form-control" id="name" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Alamat Email</label>
-                            <input type="email" class="form-control" id="email" required>
+                            <input type="text" class="form-control @error('name') is-invalid @enderror" 
+                                id="name" name="name" required value="{{ old('name') }}">
+                            @error('name')
+                                <div class="invalid-feedback">{{ $message }}</div>
+                            @enderror
                         </div>
                         <div class="mb-3">
                             <label for="phone" class="form-label">Nomor Telepon</label>
-                            <input type="tel" class="form-control" id="phone" required>
+                            <input type="tel" class="form-control @error('phone') is-invalid @enderror" 
+                                id="phone" name="phone" required value="{{ old('phone') }}">
+                            @error('phone')
+                                <div class="invalid-feedback">{{ $message }}</div>
+                            @enderror
                         </div>
+                        
                         <div class="mb-3">
                             <label for="service_type" class="form-label">Tipe Paket</label>
                             <select class="form-control @error('service_type') is-invalid @enderror" id="service_type" name="service_type" required>
@@ -72,16 +81,22 @@
                             </select>
                         </div>
                         <div class="mb-3">
-                            <label for="pickup-date" class="form-label">Tanggal Pengambilan</label>
-                            <input type="date" class="form-control" id="pickup-date" required>
+                            <label for="pickup_date" class="form-label">Tanggal Pengambilan</label>
+                            <input type="date" class="form-control @error('pickup_date') is-invalid @enderror" 
+                                id="pickup_date" name="pickup_date" required value="{{ old('pickup_date') }}">
+                            @error('pickup_date')
+                                <div class="invalid-feedback">{{ $message }}</div>
+                            @enderror
                         </div>
-                        <div class="mb-3">
-                            <label for="pickup-time" class="form-label">Waktu Pengambilan</label>
-                            <input type="time" class="form-control" id="pickup-time" required>
-                        </div>
+                        
                         <div class="mb-3">
                             <label for="notes" class="form-label">Catatan</label>
-                            <textarea class="form-control" id="notes" rows="3" placeholder="Tambahkan catatan khusus untuk layanan Anda"></textarea>
+                            <textarea class="form-control @error('notes') is-invalid @enderror" 
+                                id="notes" name="notes" rows="3" 
+                                placeholder="Tambahkan catatan khusus untuk layanan Anda">{{ old('notes') }}</textarea>
+                            @error('notes')
+                                <div class="invalid-feedback">{{ $message }}</div>
+                            @enderror
                         </div>
                         <button type="submit" class="btn btn-primary w-100">Pesan Sekarang</button>
                     </form>
@@ -110,9 +125,9 @@
     </div>
 </div>
 
-@push('scripts')
+<!-- @push('scripts')
 <script src="{{ asset('js/reservation.js') }}"></script>
-@endpush
+@endpush -->
 
 <!-- Hidden data for JavaScript -->
 <div id="layanan-data" 
@@ -120,3 +135,5 @@
     data-satuan='@json($layanan_satuan)' 
     style="display: none;">
 </div>
+
+@endsection

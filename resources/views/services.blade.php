@@ -2,6 +2,10 @@
 
 @section('title', 'Our Services')
 
+@section('additional_css')
+    <link rel="stylesheet" href="{{ asset('css/services.css') }}">
+@endsection
+
 @section('content')
 <div class="hero page-inner overlay">
     <div class="container">

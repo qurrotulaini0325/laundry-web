@@ -1,3 +1,7 @@
+@section('additional_css')
+    <link rel="stylesheet" href="{{ asset('css/navbar.css') }}">
+@endsection
+
 <nav class="custom-navbar navbar navbar-expand-md navbar-dark bg-dark header_area" style="padding-top: 8px; padding-bottom: 8px;" aria-label="Laundry navigation bar">
     <div class="container">
         <!-- Logo -->

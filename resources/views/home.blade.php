@@ -2,6 +2,31 @@
 
 @section('title', 'Home')
 
+@section('additional_css')
+    <link rel="stylesheet" href="{{ asset('css/tiny-slider.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/home.css') }}">
+@endsection
+
+@section('additional_js')
+    <script src="{{ asset('js/tiny-slider.js') }}"></script>
+    <script>
+        const slider = tns({
+            container: '.testimonial-slider',
+            items: 1,
+            slideBy: 'page',
+            autoplay: true,
+            controlsContainer: '#testimonial-nav',
+            nav: false,
+            autoplayButtonOutput: false,
+            responsive: {
+                768: {
+                    items: 1
+                }
+            }
+        });
+    </script>
+@endsection
+
 @section('content')
 <!-- Hero Section -->
 <div class="hero" data-aos="fade-up">
