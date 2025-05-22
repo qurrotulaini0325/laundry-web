@@ -10,6 +10,10 @@
         <div class="card">
             <div class="card-body">
                 <h5 class="card-title">Selamat Datang di Laundry Admin Panel</h5>
+                <form method="POST" action="{{ route('logout') }}">
+                    @csrf
+                    <button type="submit">Logout</button>
+                </form>
                 <p class="card-text">Gunakan panel admin ini untuk mengelola layanan laundry.</p>
                 <div class="row mt-4">
                     <div class="col-md-4">
@@ -24,7 +28,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Add more dashboard cards as needed -->
                 </div>
             </div>
         </div>
