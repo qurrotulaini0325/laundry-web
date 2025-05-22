@@ -290,6 +290,13 @@ a {
         margin-bottom: 3rem;
         position: relative;
          font-weight: 600; }
+    .section-title-custom {
+       font-size: 28px;
+       text-align: left;
+        color: #094848;
+        margin-bottom: 3rem;
+        position: relative;
+         font-weight: 600; }
       .section-title:after {
         content: '';
         position: absolute;
@@ -302,6 +309,24 @@ a {
         content: '';
        position: absolute;
        left: 50%;
+        transform: translateX(-50%);
+        bottom: -10px;
+        height: 3px;
+        width: 60px;
+        background-color: #28a4a4;
+        border-radius: 10px; }
+        .section-title-custom:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 3px;
+        width: 60px;
+        background-color: #549c99; }
+      .section-title-custom::after {
+        content: '';
+       position: absolute;
+       left: 10%;
         transform: translateX(-50%);
         bottom: -10px;
         height: 3px;

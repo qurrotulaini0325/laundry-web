@@ -121,7 +121,7 @@
     <div class="row">
       <!-- Judul dan Deskripsi -->
       <div class="col-md-12 col-lg-3 mb-5 mb-lg-0" data-aos="fade-right">
-        <h2 class="mb-4 section-title">Layanan Unggulan Kami</h2>
+        <h2 class="mb-4 section-title-custom">Layanan Unggulan Kami</h2>
         <p class="mb-4">Berbagai layanan premium untuk memenuhi kebutuhan laundry Anda dengan hasil yang memuaskan.</p>
         <p><a href="/services" class="btn">Lihat Semua Layanan</a></p>
       </div>
