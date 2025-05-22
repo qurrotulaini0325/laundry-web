@@ -6,15 +6,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const form = document.querySelector('.reservation-form');
     const phoneInput = document.getElementById('phone');
     const dateInput = document.getElementById('pickup_date');
-
     
-    // Parse the JSON data from the hidden div
     const dailyServices = JSON.parse(layananData.dataset.daily);
     const satuanServices = JSON.parse(layananData.dataset.satuan);
 
-    // Function to update service items based on service type
     function updateServiceItems(serviceType) {
-        // Clear current options
         serviceItemSelect.innerHTML = '<option value="">Pilih jenis layanan</option>';
         
         if (!serviceType) return;
@@ -36,12 +32,10 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Event listener for service type change
     serviceTypeSelect.addEventListener('change', function() {
         updateServiceItems(this.value);
     });
 
-    // Initialize service items if service type is pre-selected
     if (serviceTypeSelect.value) {
         updateServiceItems(serviceTypeSelect.value);
     }
@@ -49,7 +43,6 @@ document.addEventListener('DOMContentLoaded', function() {
     form.addEventListener('submit', function (event) {
         let valid = true;
 
-        // Validasi nomor telepon: hanya angka
         const phoneValue = phoneInput.value.trim();
         if (!/^\d+$/.test(phoneValue)) {
             alert('Nomor telepon hanya boleh berisi angka.');
@@ -57,10 +50,9 @@ document.addEventListener('DOMContentLoaded', function() {
             valid = false;
         }
 
-        // Validasi tanggal: minimal hari ini
         const selectedDate = new Date(dateInput.value);
         const today = new Date();
-        today.setHours(0, 0, 0, 0); // Hilangkan jam agar validasi hanya berdasarkan tanggal
+        today.setHours(0, 0, 0, 0);
 
         if (selectedDate < today) {
             alert('Tanggal pengambilan tidak boleh sebelum hari ini.');
@@ -69,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         if (!valid) {
-            event.preventDefault(); // Hentikan submit form
+            event.preventDefault();
         }
     });
 

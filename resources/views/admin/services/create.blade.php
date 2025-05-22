@@ -3,6 +3,10 @@
 @section('title', 'Add New Service')
 @section('page_title', 'Add New Service')
 
+@section('additional_js')
+    <script src="{{ asset('js/service-form-validation.js') }}"></script>
+@endsection
+
 @section('content')
 <div class="row">
     <div class="col-md-8">

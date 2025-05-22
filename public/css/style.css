@@ -127,7 +127,7 @@ a {
   padding: 5rem 0 4rem 0; }
   .hero.page-inner.overlay {
     position: relative; 
-    background-image: url('../images/laundry-basket.jpg');
+    background-image: url('../images/laundry-basket.webp');
     background-size: cover;
     background-position: center; }
       @media (min-width: 768px) {
