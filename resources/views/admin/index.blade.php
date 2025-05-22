@@ -10,6 +10,7 @@
         <div class="card">
             <div class="card-body">
                 <h5 class="card-title">Selamat Datang di Laundry Admin Panel</h5>
+                
                 <p class="card-text">Gunakan panel admin ini untuk mengelola layanan laundry.</p>
                 <div class="row mt-4">
                     <div class="col-md-4">

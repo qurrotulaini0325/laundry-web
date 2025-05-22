@@ -2,7 +2,6 @@
     <footer class="footer-section" style="background-color: rgb(255, 255, 255); padding: 3rem 0;">
         <div class="container">
             <div class="row g-5 mb-2">
-                <!-- Brand & Deskripsi -->
                 <div class="col-lg-4" data-aos="fade-right">
                     <div class="mb-4 footer-logo-wrap">
                         <a href="/" class="footer-logo d-inline-block">
@@ -13,7 +12,6 @@
                         Assyifa Laundry adalah layanan laundry kiloan dan satuan. Kami adalah tim profesional yang selalu mengutamakan kualitas cucian & pelayanan dengan prinsip bersih, rapi, wangi, higienis & tepat waktu.
                     </p>
 
-                    <!-- Sosial Media -->
                     <ul class="list-unstyled d-flex gap-3" data-aos="zoom-in">
                         <li>
                             <a href="#" style="
@@ -63,10 +61,8 @@
                     </ul>
                 </div>
 
-                <!-- Menu & Kontak -->
                 <div class="col-lg-8" data-aos="fade-left">
                     <div class="row links-wrap">
-                        <!-- Menu -->
                         <div class="col-6 col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
                             <h5 class="mb-3" style="font-weight: 600; color: #5da9a4;">Menu</h5>
                             <ul class="list-unstyled">
@@ -78,7 +74,6 @@
                             </ul>
                         </div>
 
-                        <!-- Kontak -->
                         <div class="col-6 col-md-5" data-aos="fade-up" data-aos-delay="200">
                             <h5 class="mb-3" style="font-weight: 600; color: #5da9a4;">Kontak</h5>
                             <ul class="list-unstyled text-muted">
@@ -108,7 +103,6 @@
         </div>
     </footer>
 
-    <!-- Copyright -->
     <div style="background-color: #5da9a4; color: white; padding: 1rem; text-align: center; font-size: 14px;">
         Copyright © Asyifa Laundry 2025 | Developed by Informatika UM
     </div>
