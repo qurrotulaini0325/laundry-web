@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\ambil_layanan_satuan;
 use App\Models\ambil_daily_kiloan;
+use App\Models\Reservation;
 
 class AdminController extends Controller
 {
@@ -136,5 +137,11 @@ class AdminController extends Controller
             $service->delete();
             return redirect()->route('admin.services')->with('success', 'Layanan satuan berhasil dihapus');
         }
+    }
+
+    public function reservations()
+    {
+        $reservations = Reservation::orderBy('created_at', 'asc')->get();
+        return view('admin.reservations.index', compact('reservations'));
     }
 }

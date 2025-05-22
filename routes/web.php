@@ -23,3 +23,4 @@ Route::post('/admin/services', [AdminController::class, 'storeService'])->name('
 Route::get('/admin/services/{id}/edit', [AdminController::class, 'editService'])->name('admin.services.edit');
 Route::put('/admin/services/{id}', [AdminController::class, 'updateService'])->name('admin.services.update');
 Route::delete('/admin/services/{id}', [AdminController::class, 'deleteService'])->name('admin.services.delete');
+Route::get('/admin/reservations', [AdminController::class, 'reservations'])->name('admin.reservations');

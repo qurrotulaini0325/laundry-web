@@ -60,7 +60,11 @@
                             <i class="fas fa-list me-2"></i> Services
                         </a>
                     </li>
-
+                    <li class="nav-item">
+                        <a href="{{ route('admin.reservations') }}" class="nav-link {{ request()->routeIs('admin.reservations') ? 'active' : '' }}">
+                            <i class="fas fa-calendar-check me-2"></i> Reservasi
+                        </a>
+                    </li>
                     <li class="nav-item">
                         <a href="{{ route('home') }}" class="nav-link">
                             <i class="fas fa-arrow-left me-2"></i> Back to Website
