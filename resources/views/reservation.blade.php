@@ -7,13 +7,10 @@
 @endsection
 
 @section('content')
-<div class="hero page-inner overlay">
-    <div class="container">
-        <div class="row justify-content-center align-items-center">
-            <div class="col-lg-9 text-center mt-5">
-                <h1 class="heading text-white">Make a Reservation</h1>
-                <p class="text-white-50 mb-4">Book your laundry service with us today.</p>
-            </div>
+<div class="container mt-4">
+    <div class="hero page-inner overlay hero-custom rounded-4 shadow-lg position-relative" style="height: 250px;">
+        <div class="position-absolute top-50 start-50 translate-middle text-center">
+            <h1 class="text-white fw-bold display-4">Reservasi Sekarang</h1>
         </div>
     </div>
 </div>
