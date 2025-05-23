@@ -64,9 +64,8 @@
                 </form>
             </div>
 
-            {{-- Info Kontak --}}
             <div class="col-lg-5 offset-lg-1" data-aos="fade-left" data-aos-delay="600">
-                <h3 class="mb-4">Informasi</h3>
+                <h3 class="mb-4">Informasi Kontak</h3>
                 <div class="contact-info mt-3">
                     <div class="d-flex mb-4" data-aos="fade-up" data-aos-delay="1000">
                         <i class="fas fa-clock fa-lg me-3 mt-1 text-warning"></i>
